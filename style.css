@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+    z-index: 1;
+}
+ul{
+    list-style-type: none;
+}
+header{
+  z-index: 2;
+}
+
+.responsive {    
+    display: none;
+}
+.headermenunav{
+    display: none;
+}
+.headerdiv{
+    position: absolute;
+    top: 3%;
+    left: 0;
+
+    width: 100%;
+    z-index: 999;
+    background: rgba(255,255,255,0);
+       
+}
+.headerdiv2{
+    transition: 0.4s; 
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    color: white;     
+    background-color:#ff6537;    
+}
+.logo{
+    display: inline-block;
+}
+.logo2{    
+    display: inline-block;
+}
+.logo img{  
+    z-index: 999;  
+    transition: 0.4s; 
+    margin-left: 50%;
+    margin-top: -20px;
+    width: 90px;
+    height: 110px;
+}
+.logo2 img{
+    z-index: 999;
+    margin-left: 50%;
+    transition: 0.4s; 
+    width: 50px;
+    height: 60px;
+}
+.headermenu{  
+    float: right;
+    margin-right: 5%;
+    text-align: center;
+}
+.headermenu2{ 
+    float: right;
+    margin-right: 5%;
+    text-align: center;
+}
+.headermenu li{
+    display: inline-block;  
+}
+.headermenu2 li{
+    display: inline-block;  
+}
+.headermenu li:after 
+{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0%;
+    background-color:#ff6537;
+    transition:  0.3s ease;
+}
+.headermenu2 li:after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0%;
+    background-color:white;
+    transition:  .3s ease;
+}
+.headermenu li:hover:after {
+    width: 100%;
+}
+.headermenu2 li:hover:after {
+    width: 100%;
+}
+.headermenu .menu a{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 0px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;   
+    height: 55px;
+    line-height: 60px;
+}
+.headermenu2 .menu2 a{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 0px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;   
+    height: 55px;
+    line-height: 60px;
+}
+#a{
+    text-align: center;
+    font-size: 15px;
+    padding: 0px;
+}
+ul.menucalismalarim a{
+    font-size:12px ;
+    padding: 0px;
+}
+ul.menu li {
+    position: relative;
+    width: 150px;
+}
+ul.menu2 li {
+    position: relative;
+    width: 150px;
+}
+ul.menu li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: auto;
+    left: auto;
+}
+ul.menu2 li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: auto;
+    left: auto;
+}
+
+ul.menu li:hover ul {
+    transition: 0.4s;
+    display: block;
+}
+ul.menu2 li:hover ul {
+    background-color: #ff6537;
+    transition: 0.4s;
+    display: block;
+}
+ul.menu li:hover ul, ul.menu li.over ul{
+    transition: 0.4s;
+    display: block;    
+}
+ul.menu2 li:hover ul, ul.menu li.over ul{
+    transition: 0.4s;
+    display: block;    
+}
+.container{
+    background-image: url(anasayfas.jpg);   
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;        
+    height: 100%;
+    width: 100%;
+}
+.containerici{
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   display: table;
+}
+.containerici h1{
+    
+color: #ff6537;
+font-family: 'Raleway', sans-serif;
+font-size: 100px;
+vertical-align: middle;
+letter-spacing: -2px;
+}
+.containerici h3{
+    color: #ff6537;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    margin-top: 24px;
+    text-align: center;  
+    font-weight: 100; 
+    }
+.orta{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.icons{
+    padding: 24px;
+}
+.icons img{    
+    padding: 0px 12px;
+    width: 36px;
+    height: 36px;
+}
+.footerulasimmenu{
+    text-align: center;
+}
+.footerdiv{
+    padding: 40px 0px;
+    transition: 0.3s;     
+    width: 100%;
+    height: 100%;
+    color: white;     
+    background-color:#ff6537;  
+}
+.footericons{
+    padding-top: 15px;
+}
+.footericons img{
+width: 20px;
+height: 20px;
+padding: 0px 10px;
+
+}
+.copyright p{
+padding-top:14px;
+font-size: 12px;
+}
+
+.footeriletisimmenu{
+    text-align: center;
+    width: 100%;
+}
+.iletisim{    
+    width: 100%;
+    padding-top: 10px;
+    line-height: 24px;
+
+    text-align: center;
+}
+.iletisim img{
+    width: 14px;
+    height: 14px;
+    padding: 0px 5px;
+ }
+.phoneicon{
+     display: inline-block;
+}
+.phonenumber{
+    display: inline-block;   
+}
+.locationicon{
+    display: inline-block;
+}
+.location{
+    display: inline-block;
+}
+.eposta{
+    display: inline-block;
+}
+.epostaicon{
+    display: inline-block;
+}
+#contact {
+    background-image: url(anasayfas.jpg); 
+    padding: 20%;
+    padding-top:15% ;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#contact label{
+    font-size: 26px;
+    color: white;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="date"],
+#contact input[type="tel"],
+#contact textarea {
+    font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px 0px;
+} 
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+ 
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+ 
+#contact input[type="submit"] {
+    width: 20%;
+    float: right;
+    text-align: center;   
+    background:#ff6537;
+    color: #FFF;
+    font-size: 25px;
+    
+}
+ 
+#contact input[type="submit"]:hover {
+    background: #ff8a66;
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+#contact input[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+.container2{
+    padding-top: 15px;
+    background-color: #fff2ee;
+    width: 100%;    
+    height: auto;
+}
+.half{
+  width: 100%;
+  height: 50%;
+}
+.container2 a{
+  z-index: 1;
+}
+
+
+/*Slieders*/
+/*Duyurular*/
+
+.duyurular{
+  text-align: center;
+  padding:0px 0px 0px 0px;
+  float: left;
+  width: 49%; 
+height: 55%;
+}
+.duyurular h1{
+    font-family: 'Raleway',sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #ff6537;
+}
+.duyurular img{
+    width: 100%;
+    height: 50%;
+}
+.haberler{
+    text-align: center;
+    padding:0px 0px 0px 0px;
+    float: right;
+ width: 49%;
+ height: 50%;
+}
+.haberler h1{
+    font-family: 'Raleway',sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #ff6537;
+}
+.haberler img{
+    width: 100%;
+    height: 50%;
+}
+.video{
+width: 100%;
+}
+.calismalarim{
+  padding-top: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.calismalarim h1{
+font-family: 'Raleway',sans-serif;
+font-size: 36px;
+font-weight: 800;
+text-transform: capitalize;
+color: #ff6537;
+}
+.calismalarim img{
+width: 50%;
+height: 50%;
+}
+.mySlides,.mySlides2,.mySlides3 {
+    display:none;
+    width: 100%;  
+  }
+  .prev, .next {
+    margin-top: 12%;
+    position: absolute; 
+    width: auto;  
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev{
+      margin-right: 1%;
+      left:0;
+  }
+  .next {
+      right:51%;
+      
+    border-radius: 3px 0 0 3px;
+  }
+  .prev2, .next2 {
+    margin-top: 12%;
+    position: absolute; 
+    width: auto;  
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev2{
+      margin-left: 1%;
+      left: 50%;
+  }
+  .next2 {
+      right: 0;      
+    border-radius: 3px 0 0 3px;
+  }
+  .prev3, .next3 {
+    margin-top: 12%;
+    position: absolute; 
+    width: auto;  
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev3{
+    left: 25%;
+  }
+  .next3 {
+    right: 25%;      
+    border-radius: 3px 0 0 3px;
+  }
+    
+  .prev3:hover, .next3:hover {
+    background-color: #ff663777;
+  }
+  .prev:hover, .next:hover,.prev2:hover, .next2:hover,.prev3:hover, .next3:hover {
+    background-color: #ff663777;
+  }
+  
+  .text a,.text2  a,.text3 a{
+    text-decoration: none;
+    color: #ff6537;
+    font-size: 16px;
+    padding: 8px 12px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .numbertext,.numbertext2{
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    
+  }
+  .numbertext3 {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;    
+    padding-left: 25%;
+  }
+  .dot,.dot2,.dot3 {    
+    cursor: pointer;
+    height: 12px;
+    width: 12px; 
+    background-color: #bbb;
+    display:inline-block;
+    bottom: 0px;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover,.active2, .dot2:hover,.active3, .dot3:hover {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }  
+  .fade2 {
+    -webkit-animation-name: fade2;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade2;
+    animation-duration: 1.5s;
+  }
+  .fade3 {
+    -webkit-animation-name: fade3;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade3;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @-webkit-keyframes fade2 {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade2 {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @-webkit-keyframes fade3 {
+    from {opacity: .6}
+    to {opacity: 1}
+  }
+    
+  @keyframes fade3 {
+    from {opacity: .6}
+    to {opacity: 1}
+  }
+  /*Çalışmalarım*/
+
+  /* Eczane*/
+
+  .containereczane{
+      width: 100%;
+      height: 100%;
+      background-image: url(anasayfas.jpg);  
+      display: table;
+      background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .eczaneresimler{
+      padding-top: 10%;
+      width: 50%;
+      display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+   }
+   .eczaneresimler img{
+    width: 100%;    
+ }
+    #img2,#img3{
+        width: 30%;
+    }   
+   .eczaneicerik {
+    padding-top:10%;
+    display: table-cell;    
+    text-align: center;
+   }
+   
+    .pdf{
+        padding-top: 10%;
+       width: 100%;
+    height: 100%;
+   }
+   .pdf p{
+       color: white;
+       font-size: 18px;
+       font-weight: normal;
+   }
+  /*---------*/
+  /*İK*/
+  .containerlojistik{
+    width: 100%;
+    height: 100%;
+    background-image: url(anasayfas.jpg);  
+    display: table;
+    background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+.lojistikresimler{
+    padding-top: 10%;
+    width: 50%;
+    display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+ }
+ .lojistikresimler img{
+  width: 100%;    
+}
+  #limg2,#limg3{
+      width: 30%;
+  }   
+ .lojistikicerik {
+  padding-top:10%;
+  display: table-cell;    
+  text-align: center;
+ }
+  /*---------*/
+  /*ik*/
+  .containerik{
+    width: 100%;
+    height: 100%;
+    background-image: url(anasayfas.jpg);  
+    display: table;
+    background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+.ikresimler{
+    padding-top: 10%;
+    width: 50%;
+    display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+ }
+ .ikresimler img{
+  width: 100%;    
+}
+  #ikimg2,#ikimg3{
+      width: 60%;
+  }   
+ .ikicerik {
+  padding-top:10%;
+  display: table-cell;    
+  text-align: center;
+ }.previk, .nextik {
+    margin-top: 12%;
+    position: absolute; 
+    width: auto;  
+    padding: 16px;
+    color: #ff6537;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .previk{
+      margin-right: 1%;
+      left:0;
+  }
+  .nextik {
+      right:51%;
+      
+    border-radius: 3px 0 0 3px;
+  }
+  .previk2, .nextik2 {
+    margin-top: 12%;
+    position: absolute; 
+    width: auto;  
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .previk2{
+      margin-left: 1%;
+      left: 50%;
+  }
+  .nextik2 {
+      right: 0;      
+    border-radius: 3px 0 0 3px;
+  }
+  .previk3, .nextik3 {
+    margin-top: 12%;
+    position: absolute; 
+    width: auto;  
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .previk3{
+    left: 25%;
+  }
+  .nextik3 {
+    right: 25%;      
+    border-radius: 3px 0 0 3px;
+  }
+    
+  .previk3:hover, .nextik3:hover {
+    background-color:white;
+  }
+  .previk:hover, .nextik:hover,.previk2:hover, .nextik2:hover,.previk3:hover, .nextik3:hover {
+    background-color: white;
+  }
+  /*---------*/
+
+  @media screen and (max-width:786px) {
+    #menu-bar{
+        display: none;
+      }
+    .duyurular h1{
+    font-family: 'Raleway',sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #ff6537;
+    }
+    .haberler h1{
+    font-family: 'Raleway',sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #ff6537;
+
+    }
+    .calismalarim h1{
+    font-family: 'Raleway',sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #ff6537; 
+    }
+    .containerici h1{
+    color: #ff6537;
+    font-family: 'Raleway', sans-serif;
+    font-size: 75px;
+    vertical-align: middle;
+    letter-spacing: -2px;
+    }
+    .responsive{
+        display: block;
+        float: right;
+        margin-right: 5%;
+        text-align: center;      
+    }
+    .responsive label{
+        color: white;
+        float:right;
+        font-size: 200%;
+        cursor: pointer;
+        line-height: 60px;
+      }
+    .menu{
+        display: none;
+    }
+    .menu2{
+    display: none;
+    }
+    .headermenu{
+        margin-top: -10px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    float: left;
+    clear: both;
+         
+    }
+    .headermenu2{
+        margin-top: -10px;
+        width: 100%;
+    float: left;
+    clear: both;
+    }
+    .headermenunav a{
+        text-decoration: none;
+    }
+    .headermenunav{
+        transition: 5s;
+        background-color: black;
+    display: none;
+    }
+    .headermenunav a{
+        color: white;
+        display: block;
+        padding: 5px;
+        left: 5px;
+        margin-right: 1px;
+    }
+}
