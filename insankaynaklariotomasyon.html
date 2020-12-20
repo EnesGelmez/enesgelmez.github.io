@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>İnsan Kaynakları Otomasyonu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header id="hd" class="headerdiv">
+        <div id="lg" class="logo"> 
+            <a href="anasayfa.html" ><img src="logo.png" alt=""></a>
+        </div>
+        <div class="responsive">
+            <input type="checkbox" id="menu-bar" onclick="header()">
+            <label class="fa fa-bars"for="menu-bar"></label>  
+            
+        </div>
+        <div id="hm" class="headermenu">
+            <ul id="mn" class="menu">
+                <li><a href="anasayfa.html">Anasayfa</a></li>
+                <li><a target="_blank" href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="">Çalışmalarım</a>
+                    <ul class="menucalismalarim">
+                        <li><a id="a" target="_blank" href="eczaneotomasyon.html"> Eczane Otomasyonu</a></li>
+                        <li><a id="a" target="_blank" href="lojistikotomasyon.html"> Lojistik Otomasyonu</a></li>
+                        <li><a id="a" target="_blank" href="insankaynaklariotomasyon.html"> İK Otomasyonu</a></li>
+                    </ul>
+                </li>
+                <li><a target="_blank" href="iletisim.html">İletişim</a></li>
+            </ul>
+            <nav id="hmn" class="headermenunav">
+                <a href="anasayfa.html">Anasayfa</a>
+                <a target="_blank" href="hakkimda.html">Hakkımda</a>
+                <a href="">Çalışmalarım</a>     
+                <a target="_blank" href="iletisim.html">İletişim</a>
+
+            </nav>   
+        </div>
+    </header> 
+    <div class="containerik">
+        <div class="ikresimler">  
+            <a class="previk" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nextik" onclick="plusSlides(1)">&#10095;</a>    
+                <div class="mySlides fade">     
+                                       
+                    <div class="numbertext">1 / 3</div>
+                    <a><img src="ikbasvuru.png"></a> 
+                    <div class="text"><a>İnsan Kaynakları Anasayfası</a></div>
+                </div>                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a><img id="ikimg2" src="ikarama.png">   </a> 
+                    <div class="text"><a>İnsan Kaynakları Giriş Sayfası</a></div>                
+                </div>                  
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <a><img id="ikimg3" src="iklisteleme.png"></a>
+                    <div class="text"><a>İnsan Kaynakları Otomasyonu Kayıt Sayfası</a></div>                   
+                </div>    
+                <div style="text-align:center">                    
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>                 
+        </div>
+        <div class="ikicerik">
+            
+            <div class="pdf">  
+                <p>
+                    <br>
+                    İnsan kaynakları otomasyon programı hem iş arayan hem de işçi arayan için geliştirilmeye başlamış bir programdır. İş arayan kişi ilgili kısımlara kişisel bilgilerini girerek kendini sisteme kayıt ediyor ve işçi arayan firmalar belirledikleri kriterlere göre işçiler arayabiliyor.
+                    
+                </p><br>       
+                <embed src="ikrapor.pdf" type="application/pdf" width="50%" height="50%">
+                    <a href="" download="ikrapor.pdf"><img src="download.png" ></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="fd" class="footerdiv">            
+            <div id="fmu" class="footerulasimmenu">
+               <div class="iletisim"> 
+                   <div class="phoneicon"> 
+                       <img src="phone.png">
+                    </div> 
+                    <div class="phonenumber">
+                        <a>(552) 797 3764</a>   
+                    </div> <br>
+                    <div class="locationicon"> 
+                        <img src="locationicon.png">
+                     </div> 
+                     <div class="location">
+                         <a>Samandıra Cd. No:18, Kartal/İST</a>   
+                     </div>  <br>
+                     <div class="epostaicon"> 
+                        <img src="epostaicon.png">
+                     </div> 
+                     <div class="eposta">
+                         <a>enes.gelmez@hotmail.com</a>   
+                     </div>                   
+                                                   
+               </div>
+                <div class="footericons">
+                    <a target="_blank" href="https://www.instagram.com/enesgelmez/?hl=tr"><img src="igiconbeyaz.png"></a> 
+                    <a target="_blank" href="https://www.facebook.com/enessgelmez/"><img src="fbiconbeyaz.png"></a>  
+                    <a target="_blank" href="https://mobile.twitter.com/EnessGelmez"><img src="twiconbeyaz.png"></a>    
+                    <a target="_blank" href="https://www.linkedin.com/in/enes-gelmez-514397197/"><img src="ldiconbeyaz.png"></a>           
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2020 Enes Gelmez | Tüm Hakları Saklıdır.</p>
+                </div>
+                
+            </div>
+        
+        </div>
+    </footer> 
+</body>
+</html>
+
+<script>
+    function header(){
+        window.onscroll = function() {scrollFunction()};
+        var checkBox = document.getElementById("menu-bar");
+        if(checkBox.checked==true)
+        {       
+            document.getElementById("hmn").style.transition="5s";
+            document.getElementById("hmn").style.display="block";
+            document.getElementById("hd").style.backgroundColor="black";
+            document.getElementById("hd").style.top="0";
+        }
+        else{ 
+            
+            document.getElementById("hmn").style.display="none";
+            document.getElementById("hd").style.backgroundColor="";
+            document.getElementById("hd").style.top="";
+        }
+        
+    }
+</script>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
