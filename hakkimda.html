@@ -3,40 +3,97 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Enes Gelmez | Hakkımda</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
+    
 </head>
 <body>
-    <header>
-        <div id="hd" class="headerdiv">
-            <div id="lg" class="logo"> 
-                <a href="anasayfa.html" ><img src="logo.png" alt=""></a>
-            </div>
-            <div id="hm" class="headermenu">
-                <ul id="mn" class="menu">
-                    <li><a href="anasayfa.html" >Anasayfa</a></li>
-                    <li><a target="_blank" href="hakkimda.html">Hakkımda</a></li>
-                    <li><a href="">Çalışmalarım</a>
-                        <ul class="menucalismalarim">
-                            <li><a target="_blank" href="eczaneotomasyon.html"> Eczane Otomasyonu</a></li>
-                            <li><a target="_blank" href="lojistikotomasyon.html"> Lojistik Otomasyonu</a></li>
-                            <li><a target="_blank" href="insankaynaklariotomasyon.html"> İK Otomasyonu</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">İletişim</a></li>
-                </ul>
-            </div>
+    <header id="hd" class="headerdiv">
+        <div id="lg" class="logo"> 
+            <a href="index.html" ><img src="logo.png" alt=""></a>
         </div>
-    </header>
+        <div class="responsive">
+            <input type="checkbox" id="menu-bar" onclick="header()">
+            <label class="fa fa-bars"for="menu-bar"></label>  
+            
+        </div>
+        <div id="hm" class="headermenu">
+            <ul id="mn" class="menu">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="">Çalışmalarım</a>
+                    <ul class="menucalismalarim">
+                        <li><a id="a" target="_blank" href="eczaneotomasyon.html"> Eczane Otomasyonu<br></a></li>
+                        <li><a id="a" target="_blank" href="lojistikotomasyon.html"> Lojistik Otomasyonu<br></a></li>
+                        <li><a id="a" target="_blank" href="insankaynaklariotomasyon.html"> İK Otomasyonu</a></li>
+                    </ul>
+                </li>
+                <li><a target="_blank" href="iletisim.html">İletişim</a></li>
+            </ul>
+            <nav id="hmn" class="headermenunav">
+                <a href="index.html">Anasayfa</a>
+                <a href="hakkimda.html">Hakkımda</a>
+                <a >Çalışmalarım  
+                <nav id="sss">
+                    <a id="a" target="_blank" href="eczaneotomasyon.html"> Eczane Otomasyonu</a></li>
+                    <a id="a" target="_blank" href="lojistikotomasyon.html"> Lojistik Otomasyonu</a></li>
+                    <a id="a" target="_blank" href="insankaynaklariotomasyon.html"> İK Otomasyonu</a></li>
+                </nav> 
+            </a> 
+                <a target="_blank" href="iletisim.html">İletişim</a>
+
+            </nav>   
+        </div>
+    </header> 
     <div class="containerhakkimda">
-        <div class="eczaneresimler">
+        <div class="hakkimdaresim">
+            <img src="resim.png" alt=""><br>
+            
+        </div>
+        <div id="hakkimdaicerikid" onblur="makeReadOnly()" class="hakkimdaicerik">
+            
+            <button onclick="makeEditable()">Düzenle</button>  <br><br>
+            <button id="btnPrint">&nbsp;Yazdır &nbsp; </button><br><br>
+            <h2>Kişisel Bilgiler</h2><br>
+İsim: Enes GELMEZ <br><br>
+
+Adres: Samandıra caddesi harmanlık sokak no:18 daire:15 Yakacık/Kartal/İST <br><br>
+Telefon Numarası: 0552 797 37 64 <br><br>
+E-Posta: enes.gelmez@hotmail.com <br><br>
+Doğum Tarihi: 02.01.1999 <br><br>
+Doğum Yeri: Kartal/İST<br><br>
+Cinsiyet: Erkek<br><br>
+Uyruk: TC<br><br>
+Medeni Durum: Bekar<br><br>
+Sürücü Ehliyeti: B <br><br>
+<h2>Eğitim Bilgileri</h2> <br>
+Eylül 2013-Temmuz 2017: 75. Yıl DMO Mesleki ve Teknik Anadolu Lisesi<br><br>
+Eylül 2017-Temmuz 2022: Kocaeli Üniversitesi/Bilişim Sistemleri Mühendisliği<br><br>
+<h2>İş Deneyimi</h2> <br>
+2015-2016 ve 2016-2017 arası Panasonic firmasında stajyerlik<br><br>
+<h2> Beceriler</h2><br>
+C#: Orta Seviye<br><br>
+Mysql: Orta Seviye<br><br>
+HTML: Başlangıç Seviyesi<br><br>
+Python: Başlangıç Seviyesi<br><br>
+Java: Başlangıç Seviyesi<br><br>
+C : Başlangıç Seviyesi<br><br>
+Microsoft Word: Orta Seviye<br><br>
+Microsoft Excell: Orta Seviye<br><br>
+<h2>Diller</h2> <br>
+İngilizce: B1 Sertifikası<br><br>
+<h2> İlgi Alanlar</h2><br>
+Fitness<br><br>
+Müzik<br><br>
+Oyun<br><br>          
+  
 
         </div>
-        <div class="eczaneicerik">
-
-        </div>
+        
     </div>
     <footer>
         <div id="fd" class="footerdiv">            
@@ -78,3 +135,42 @@
     </footer> 
 </body>
 </html>
+<script>
+    function header(){
+        window.onscroll = function() {scrollFunction()};
+        var checkBox = document.getElementById("menu-bar");
+        if(checkBox.checked==true)
+        {       
+            document.getElementById("hmn").style.transition="5s";
+            document.getElementById("hmn").style.display="block";
+            document.getElementById("hd").style.backgroundColor="black";
+            document.getElementById("hd").style.top="0";
+        }
+        else{ 
+            
+            document.getElementById("hmn").style.display="none";
+            document.getElementById("hd").style.backgroundColor="";
+            document.getElementById("hd").style.top="";
+        }
+        
+    }
+</script>
+
+<script>
+    function makeEditable(){
+        document.getElementById("hakkimdaicerikid").style.border="1px solid #000";
+        document.getElementById("hakkimdaicerikid").style.padding="2%";
+        document.getElementById("hakkimdaicerikid").contentEditable=true;
+    }
+    function makeReadOnly(){
+        document.getElementById("hakkimdaicerikid").style.border="none";
+        document.getElementById("hakkimdaicerikid").contenteditable=false;
+    }
+    $("#btnPrint").live("click", function () {
+        var divContents = $("#hakkimdaicerikid").html();
+        var printWindow = window.open('', '', 'height=800px,width=1200px');
+        printWindow.document.write(divContents);
+        printWindow.document.close();
+        printWindow.print();
+    });
+</script>

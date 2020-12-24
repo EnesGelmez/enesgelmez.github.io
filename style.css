@@ -151,7 +151,9 @@ ul.menu2 li ul {
     top: auto;
     left: auto;
 }
-
+.headermenunav a:hover {
+  background-color: #ff6537;
+}
 ul.menu li:hover ul {
     transition: 0.4s;
     display: block;
@@ -728,8 +730,56 @@ height: 50%;
     background-color: white;
   }
   /*---------*/
+  /*Hakkımda*/
+  .containerhakkimda{
+    background-image: url(anasayfas.jpg);
+    background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+    padding-top: 120px ;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+    display: flex;
+  }
+  .hakkimdaresim{
+    margin-right: 1%;
+    height: auto;
+    float: left;
+    width: 35%;
+  }
+  .hakkimdaresim img{
+    height: auto;
+    margin-left: 15%;
+  }
+  .hakkimdaicerik{
+    height: auto;
+    float: right;
+    width: 60%;
+    color: white;
+  }
+  .hakkimdaicerik h2{
+    color: #ff6537;
+  }
+  .containerhakkimda button{
+   
+    float: left;
+    height: auto;
+    width: auto;
+    font-size: 13px;
+  }
+  /*---------*/
 
   @media screen and (max-width:786px) {
+    #contact input[type="submit"] {
+      width: 50%;
+      float: right;
+      text-align: center;
+      background: #ff6537;
+      color: #FFF;
+      font-size: 20px;
+  }
     #menu-bar{
         display: none;
       }
@@ -810,4 +860,16 @@ height: 50%;
         left: 5px;
         margin-right: 1px;
     }
+    .hakkimdaresim img{
+      width: 80%;
+      height: auto;
+      margin-right: 15%;
+    }
+    #contact{
+      background-image: url(anasayfas.jpg);
+    padding: 20%;
+    padding-top: 45%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    
 }
