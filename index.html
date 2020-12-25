@@ -8,7 +8,6 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script language="javascript" src="http://ir.sitekodlari.com/yukaricik13.js"></script>
     <link rel="stylesheet" href="/css/all.min.css">
     <script src='main.js'></script>
 </head>
@@ -151,7 +150,8 @@
                  </div>                  
             </div>
         </div>
-        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
     </div>
     <footer>
         <div id="fd" class="footerdiv">            
@@ -301,6 +301,22 @@
         
     }
 </script>
+<script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+    </script>
 
 
     
