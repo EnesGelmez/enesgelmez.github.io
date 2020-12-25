@@ -745,14 +745,14 @@ height: 50%;
     height: auto;
     display: flex;
   }
-  .hakkimdaresim{
-    
+  .hakkimdaresim{    
     margin-right: 1%;
     height: auto;
     float: left;
     width: 35%;
   }
   .hakkimdaresim button{
+    
     margin-left:15%;
   }
   .hakkimdaresim img{
