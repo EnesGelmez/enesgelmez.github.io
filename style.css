@@ -751,6 +751,9 @@ height: 50%;
     float: left;
     width: 35%;
   }
+  .hakkimdaresim button{
+    margin-left:15%;
+  }
   .hakkimdaresim img{
     height: auto;
     margin-left: 15%;
@@ -774,6 +777,12 @@ height: 50%;
   /*---------*/
 
   @media screen and (max-width:786px) {
+    .pdf p {
+      margin-top: 55%;
+      color: white;
+      font-size: 12px;
+      font-weight: normal;
+  }
     #contact input[type="submit"] {
       width: 50%;
       float: right;
