@@ -299,9 +299,13 @@
             document.getElementById("hd").style.top="";
         }
  }
-
-        mybutton = document.getElementById("myBtn");
     
+   
+</script>
+
+<script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
     
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -314,9 +318,7 @@
       document.body.scrollTop = 0; 
       document.documentElement.scrollTop = 0; 
     }
-        
-   
-</script>
+    </script>
 
 
 
