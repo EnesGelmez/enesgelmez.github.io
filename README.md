@@ -1,4 +1,4 @@
-# Rfid_Reader_With_Nodemcu
+# Kişisel Web Sitesi
 Üniversite 3. sınıf 1. dönem - Web tasarımı dersi projesi.
 
 <div id="top"></div>
