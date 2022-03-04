@@ -34,5 +34,5 @@ Bu projede bizden istenilen belirli aşamaları tamamlayarak kişisel web sitesi
 [issues-shield]: https://img.shields.io/github/issues/EnesGelmez/enesgelmez.github.io.svg?style=for-the-badge
 [issues-url]: https://github.com/EnesGelmez/enesgelmez.github.io/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/enes-gelmez-514397197/
+[linkedin-url]: https://www.linkedin.com/in/enesgelmez/
 [product-screenshot]: EnesGelmez.png
